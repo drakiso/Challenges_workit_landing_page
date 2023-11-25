@@ -1,0 +1,353 @@
+@import "./utils/variables", 
+        "./utils/mixins";
+
+@import "./bases/reset";
+
+/* Start*/
+
+body {
+        color: $primary_text_color;
+        font-size: 1.1rem;
+        font-family: $body_font_family;
+
+        .site_wrapper {
+                position: relative;
+                overflow-x: hidden;
+        }
+
+        @media screen and (max-width: 767.9px) {
+                font-size: 1rem;
+        }
+}
+
+/* Style header */
+
+header {
+        background-color: $secondary_background_color;
+
+        .wrapper {
+                background-color: $primary_background_color;
+                height: 43rem;
+                @include curved_border;
+
+                @media screen and (max-width: 1023.90px) {
+                        height: 40rem;
+                }
+
+                @media screen and (max-width: 767.9px) {
+                        height: 30rem;
+                }
+        }
+
+        nav {
+                max-width: 1114px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                padding: 3.5rem 2rem 4rem;
+
+                @media screen and (max-width: 1023.90px) {
+                        padding: 3.5rem 2.5rem 3.5rem;
+                        
+                }
+
+                @media screen and (max-width: 767.9px) {
+                        padding: 2.5rem 1rem 4.5rem;
+                }
+
+                a {
+                        @include secondary_default;
+                }
+
+                a:hover {
+                        color: $emphasize_color;
+                }
+        }
+
+        .banner {
+                display:flex;
+                flex-direction: column;
+                max-width: 600px;
+                margin: auto;
+                text-align: center;
+
+                @media screen and (max-width: 1023.90px) {
+                        max-width: 550px;
+                }
+
+                @media screen and (max-width: 767.9px) {
+                        max-width: 295px;
+                }
+                
+                a {
+                        @include primary_default;
+                        margin-bottom: 3rem;
+                        font-weight: 700;
+
+                        @media screen and (max-width: 767.9px) {
+                                margin-bottom: 4rem;
+                        }
+                }
+
+                a:hover {
+                        @include primary_hover;
+                }
+        }
+
+        h1 {
+                @include heading_typography(5rem);
+                margin-bottom: 2.3rem;
+
+                @media screen and (max-width: 767.9px) {
+                        @include heading_typography(2.5rem);
+                }
+        }
+
+        span {
+                @include secondary_default;
+        }
+
+        .pattern_one {
+                position: absolute;
+                top: 8.5rem;
+                left: -8.5rem;
+
+                @media screen and (max-width: 1023.90px) {
+                        top: 8.5rem;
+                        left: -14rem;
+                }
+
+                @media screen and (max-width: 767.9px) {
+                        display: none;
+                }
+        }
+
+        .pattern_two {
+                position: absolute;
+                top: 22rem;
+                right: -3rem;
+
+                @media screen and (max-width: 1023.90px) {
+                        top: 22rem;
+                        right: -6rem;
+                }
+
+                @media screen and (max-width: 767.9px) {
+                        display: none;
+                }
+        }
+
+        .hero {
+                position: relative;
+                left: 2rem;
+
+                @media screen and (max-width: 767.9px) {
+                        position: static;
+                }
+        }
+}
+
+/* Style sections */
+
+.product_benefit {
+        background-color: $secondary_background_color;
+        @include curved_border;
+
+        @media screen and (max-width: 767.9px) {
+                border-bottom-left-radius: 100% 5%;
+                border-bottom-right-radius: 100% 5%; 
+        }
+
+        .wrapper { 
+                max-width: 1114px;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                color: $secondary_text_color;
+                line-height: 2rem;
+                text-align: center;
+                padding: 15rem 1.5rem 10rem;
+
+                @media screen and (max-width: 1023.90px) {
+                        padding-bottom: 5rem;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 3rem;
+                }
+
+                @media screen and (max-width: 767.9px) {
+                        padding: 8rem 1rem 5rem;
+                }
+        }
+
+        .features {
+                width: 350px;
+                @media screen and (max-width: 1023.90px) {
+                        width: 83.5%;
+                        display: flex;
+                }
+
+                @media screen and (max-width: 767.9px) {
+                        width: 100%;
+                        flex-direction: column;
+                        gap: 2rem;
+                }
+
+                span { 
+                        padding: 0.5rem 1rem;
+                        @include heading_typography(1.25rem);
+                        margin-bottom: 3.5rem;
+                        border: 2px $tertiary_text_color solid;
+                        border-radius: 50%;
+                        color: $secondary_text_color;
+                }
+
+                .numerotation {
+                        @media screen and (max-width: 1023.90px) {
+                                align-self: center;
+                        } 
+                }
+
+                h2 {
+                        @include heading_typography(1.75rem);
+                        margin: 3.5rem 0 1.75rem;
+
+                        @media screen and (max-width: 1023.90px) {
+                                margin: 0 0 1rem 0;
+                        }
+
+                        @media screen and (max-width: 767.9px) {
+                                @include heading_typography(1.5rem);
+                        }
+                }
+
+                .features_text {
+                        @media screen and (max-width: 1023.90px) {
+                                text-align: justify;
+                                padding-left: 2rem;
+                        }  
+
+                        @media screen and (max-width: 767.9px) {
+                                text-align: center;
+                                padding-left: 0;
+                        }
+                }
+        }
+}
+
+.repeat_offer {
+        margin: 5rem 0 10rem;
+        padding: 0 2rem;
+
+        @media screen and (max-width: 1023.90px) {
+                padding: 0 2.5rem 0;
+                margin: 5rem 0 21rem 0;
+        }  
+
+        @media screen and (max-width: 767.9px) {
+                padding: 0 1rem;
+                margin: 5rem 0 25rem 0;
+        }  
+
+        .wrapper{
+                max-width: 1114px;
+                margin: auto;
+                position: relative;
+
+                @media screen and (max-width: 767.9px) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                }
+        }
+
+        .profil_photo {
+                width: 28rem;
+                height: 28rem;
+                object-fit: contain;
+
+                @media screen and (max-width: 1023.90px) {
+                        width: 16rem;
+                        height: 16rem;
+                }  
+        }
+        
+        .offer {
+                background-color: $primary_background_color;
+                padding: 4rem 5rem;
+                position: absolute;
+                top: 11rem;
+                left: 23rem;
+                line-height: 2rem;
+
+                @media screen and (max-width: 1023.90px) {
+                        top: 9rem;
+                        left: 10rem;
+                        padding: 3rem;
+                }
+
+                @media screen and (max-width: 767.9px) {
+                        padding: 2rem 1.5rem;
+                        top: 13rem;
+                        left: 0;
+                        text-align: center;
+                }
+
+                h2 {
+                        @include heading_typography(3rem);
+                        margin-bottom: 2rem;
+
+                        @media screen and (max-width: 1023.90px) {
+                                @include heading_typography(3rem);
+                        }
+
+                        @media screen and (max-width: 767.9px) {
+                                @include heading_typography(1.5rem);
+                                margin-bottom: 1rem;
+                        }
+                }
+
+                p {
+                        margin-bottom: 2rem;
+                }
+
+                .pattern_three {
+                        position: absolute;
+                        right: 4.5rem;
+                        bottom: -4rem;
+
+                        @media screen and (max-width: 1023.90px) {
+                                right: 1rem;
+                                bottom: -7rem;
+                        }
+
+                        @media screen and (max-width: 767.9px) {
+                                display: none;
+                        }
+                }
+
+                a {
+                        @include primary_default;
+                        font-weight: 700;
+                }
+
+                a:hover {
+                        @include primary_hover;
+                }
+        }
+}
+
+/* Style footer */
+
+footer {
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        .social_media {
+                display: flex;
+                gap: 2rem;
+        }
+}
