@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/drakiso/Challenges_workit_landing_page
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My solution](https://github.com/drakiso/Challenges_workit_landing_page)
+- Live Site URL: [Live site](https://drakiso.github.io/Challenges_workit_landing_page)
 
 ## My process
 
