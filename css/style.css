@@ -390,6 +390,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  color: #24053E;
 }
 footer .social_media {
   display: flex;
