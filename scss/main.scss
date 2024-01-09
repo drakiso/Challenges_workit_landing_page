@@ -7,15 +7,15 @@
 
 body {
         color: $primary_text_color;
-        font-size: 1.1rem;
+        font-size: 1.125rem;
         font-family: $body_font_family;
 
-        .site_wrapper {
+        .site-wrapper {
                 position: relative;
                 overflow-x: hidden;
         }
 
-        @media screen and (max-width: 767.9px) {
+        @media screen and (max-width: 1023.9px) {
                 font-size: 1rem;
         }
 }
@@ -27,15 +27,17 @@ header {
 
         .wrapper {
                 background-color: $primary_background_color;
-                height: 43rem;
-                @include curved_border;
+                height: 730px;
+                @include curved_border(100%, 20%);
 
-                @media screen and (max-width: 1023.90px) {
-                        height: 40rem;
+                @media screen and (max-width: 1023.9px) {
+                        height: 540.236px;
+                        @include curved_border(100%, 15%);
                 }
 
                 @media screen and (max-width: 767.9px) {
-                        height: 30rem;
+                        height: 481.707px;
+                        @include curved_border(100%, 10%);
                 }
         }
 
@@ -44,15 +46,15 @@ header {
                 margin: auto;
                 display: flex;
                 justify-content: space-between;
-                padding: 3.5rem 2rem 4rem;
+                padding: 56px 165px;
 
-                @media screen and (max-width: 1023.90px) {
-                        padding: 3.5rem 2.5rem 3.5rem;
+                @media screen and (max-width: 1023.9px) {
+                        padding: 32px 39px 56px;
                         
                 }
 
                 @media screen and (max-width: 767.9px) {
-                        padding: 2.5rem 1rem 4.5rem;
+                        padding: 32px 16px 64px;
                 }
 
                 a {
@@ -67,26 +69,21 @@ header {
         .banner {
                 display:flex;
                 flex-direction: column;
-                max-width: 600px;
+                max-width: 635px;
                 margin: auto;
                 text-align: center;
 
-                @media screen and (max-width: 1023.90px) {
-                        max-width: 550px;
+                @media screen and (max-width: 1023.9px) {
+                        max-width: 425px;
                 }
 
                 @media screen and (max-width: 767.9px) {
-                        max-width: 295px;
+                        max-width: 343px;
                 }
                 
                 a {
                         @include primary_default;
-                        margin-bottom: 3rem;
                         font-weight: 700;
-
-                        @media screen and (max-width: 767.9px) {
-                                margin-bottom: 4rem;
-                        }
                 }
 
                 a:hover {
@@ -96,10 +93,16 @@ header {
 
         h1 {
                 @include heading_typography(5rem);
-                margin-bottom: 2.3rem;
+                margin-bottom: 37px; 
+
+                @media screen and (max-width: 1023.9px) {
+                        @include heading_typography(3.75rem);
+                        margin-bottom: 39px; 
+                }
 
                 @media screen and (max-width: 767.9px) {
-                        @include heading_typography(2.5rem);
+                        @include heading_typography(2.75rem);
+                        margin-bottom: 40px; 
                 }
         }
 
@@ -107,14 +110,14 @@ header {
                 @include secondary_default;
         }
 
-        .pattern_one {
+        .pattern-one {
                 position: absolute;
-                top: 8.5rem;
-                left: -8.5rem;
+                top: 135.17px;
+                left: -138.03px;
 
-                @media screen and (max-width: 1023.90px) {
-                        top: 8.5rem;
-                        left: -14rem;
+                @media screen and (max-width: 1023.9px) {
+                        top: 71.12px;
+                        left: -227.27px;
                 }
 
                 @media screen and (max-width: 767.9px) {
@@ -122,14 +125,14 @@ header {
                 }
         }
 
-        .pattern_two {
+        .pattern-two {
                 position: absolute;
-                top: 22rem;
-                right: -3rem;
+                top: 314.07px;
+                right: -48.08px;
 
-                @media screen and (max-width: 1023.90px) {
-                        top: 22rem;
-                        right: -6rem;
+                @media screen and (max-width: 1023.9px) {
+                        top: 250px;
+                        right: -93.68px;
                 }
 
                 @media screen and (max-width: 767.9px) {
@@ -138,24 +141,39 @@ header {
         }
 
         .hero {
+                width: 715px;
+                height: 427px; 
+                object-fit: contain;
                 position: relative;
-                left: 2rem;
+                top: 50px;
+
+                @media screen and (max-width: 1023.9px) {
+                        width: 479.153px;
+                        height: 286.603px; 
+                        top: 55px;
+                }
 
                 @media screen and (max-width: 767.9px) {
-                        position: static;
+                        width: 298.305px;
+                        height: 178.159px; 
+                        top: 64px;
+                        align-self: center;
                 }
         }
 }
 
 /* Style sections */
 
-.product_benefit {
+.product-benefit {
         background-color: $secondary_background_color;
-        @include curved_border;
+        @include curved_border(100%, 20%);
+
+        @media screen and (max-width: 1023.9px) {
+                @include curved_border(100%, 15%);
+        }
 
         @media screen and (max-width: 767.9px) {
-                border-bottom-left-radius: 100% 5%;
-                border-bottom-right-radius: 100% 5%; 
+                @include curved_border(100%, 5%);
         }
 
         .wrapper { 
@@ -164,97 +182,100 @@ header {
                 display: flex;
                 justify-content: space-between;
                 color: $secondary_text_color;
-                line-height: 2rem;
+                line-height: 32px;
                 text-align: center;
-                padding: 15rem 1.5rem 10rem;
+                padding: 255px 0 171px;
 
-                @media screen and (max-width: 1023.90px) {
-                        padding-bottom: 5rem;
+                @media screen and (max-width: 1023.9px) {
+                        padding: 203.76px 0 103.73px;
                         flex-direction: column;
                         align-items: center;
-                        gap: 3rem;
+                        gap: 48px;
                 }
 
                 @media screen and (max-width: 767.9px) {
-                        padding: 8rem 1rem 5rem;
+                        padding: 155.29px 0 71.71px;
                 }
         }
 
         .features {
-                width: 350px;
-                @media screen and (max-width: 1023.90px) {
-                        width: 83.5%;
+                width: 354px;
+                @media screen and (max-width: 1023.9px) {
+                        width: 573px;
                         display: flex;
                 }
 
                 @media screen and (max-width: 767.9px) {
-                        width: 100%;
+                        width: 343px;
                         flex-direction: column;
-                        gap: 2rem;
+                        gap: 40px;
                 }
 
                 span { 
-                        padding: 0.5rem 1rem;
-                        @include heading_typography(1.25rem);
-                        margin-bottom: 3.5rem;
+                        padding: 16px 24px;
+                        @include heading_typography(1.5rem);
                         border: 2px $tertiary_text_color solid;
                         border-radius: 50%;
                         color: $secondary_text_color;
+
+                        @media screen and (max-width: 1023.9px) {
+                                padding: 14px 22px;
+                                @include heading_typography(1.25rem);
+                        } 
                 }
 
                 .numerotation {
-                        @media screen and (max-width: 1023.90px) {
+                        @media screen and (max-width: 1023.9px) {
                                 align-self: center;
                         } 
                 }
 
                 h2 {
-                        @include heading_typography(1.75rem);
-                        margin: 3.5rem 0 1.75rem;
+                        @include heading_typography(2rem);
+                        margin: 56px 0 28px;
 
-                        @media screen and (max-width: 1023.90px) {
-                                margin: 0 0 1rem 0;
-                        }
-
-                        @media screen and (max-width: 767.9px) {
-                                @include heading_typography(1.5rem);
+                        @media screen and (max-width: 1023.9px) {
+                                @include heading_typography(1.75rem);
+                                margin: 0 0 16px 0;
                         }
                 }
 
-                .features_text {
-                        @media screen and (max-width: 1023.90px) {
+                .feature-text {
+                        @media screen and (max-width: 1023.9px) {
                                 text-align: justify;
-                                padding-left: 2rem;
+                                padding-left: 32px;
                         }  
 
                         @media screen and (max-width: 767.9px) {
                                 text-align: center;
                                 padding-left: 0;
                         }
+
+                        @media screen and (max-width: 350px) {
+                                margin: 0 1rem;
+                        }
                 }
         }
 }
 
 .repeat_offer {
-        margin: 5rem 0 10rem;
-        padding: 0 2rem;
+        padding-top: 110px;
 
-        @media screen and (max-width: 1023.90px) {
-                padding: 0 2.5rem 0;
-                margin: 5rem 0 21rem 0;
-        }  
-
-        @media screen and (max-width: 767.9px) {
-                padding: 0 1rem;
-                margin: 5rem 0 25rem 0;
-        }  
+        @media screen and (max-width: 1023.9px) {
+                padding-top: 100.27px;
+        }   
 
         .wrapper{
                 max-width: 1114px;
                 margin: auto;
                 position: relative;
 
+                @media screen and (max-width: 1023.9px) {
+                        max-width: 728px;
+                }  
+
                 @media screen and (max-width: 767.9px) {
+                        max-width: 343px;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -262,63 +283,74 @@ header {
         }
 
         .profil_photo {
-                width: 28rem;
-                height: 28rem;
+                width: 450.287px;
+                height: 453px; 
                 object-fit: contain;
 
-                @media screen and (max-width: 1023.90px) {
-                        width: 16rem;
-                        height: 16rem;
+                @media screen and (max-width: 1023.9px) {
+                        width: 265px;
+                        height: 267px;
+                }  
+
+                @media screen and (max-width: 767.9px) {
+                        width: 281px;
+                        height: 281px;
                 }  
         }
         
         .offer {
                 background-color: $primary_background_color;
-                padding: 4rem 5rem;
+                padding: 64px;
                 position: absolute;
-                top: 11rem;
-                left: 23rem;
-                line-height: 2rem;
+                top: 173px;
+                left: 382.14px;
+                line-height: 32px;
 
-                @media screen and (max-width: 1023.90px) {
-                        top: 9rem;
-                        left: 10rem;
-                        padding: 3rem;
+                @media screen and (max-width: 1023.9px) {
+                        top: 151px;
+                        left: 175px;
+                        padding: 48px 56px 56px;
+                        line-height: 28px;
                 }
 
                 @media screen and (max-width: 767.9px) {
-                        padding: 2rem 1.5rem;
-                        top: 13rem;
+                        padding: 32px 31px;
+                        top: 228px;
                         left: 0;
                         text-align: center;
                 }
 
                 h2 {
-                        @include heading_typography(3rem);
-                        margin-bottom: 2rem;
+                        @include heading_typography(3.5rem);
+                        margin-bottom: 32px;
 
-                        @media screen and (max-width: 1023.90px) {
+                        @media screen and (max-width: 1023.9px) {
                                 @include heading_typography(3rem);
+                                margin-bottom: 24px;
                         }
 
                         @media screen and (max-width: 767.9px) {
-                                @include heading_typography(1.5rem);
-                                margin-bottom: 1rem;
+                                @include heading_typography(2rem);
+                                margin-bottom: 16px;
                         }
                 }
 
                 p {
-                        margin-bottom: 2rem;
+                        margin-bottom: 32px;
+
+                        @media screen and (max-width: 1023.9px) {
+                                margin-bottom: 24px;
+                        }
                 }
 
-                .pattern_three {
+                .pattern-three {
                         position: absolute;
-                        right: 4.5rem;
-                        bottom: -4rem;
+                        right: 72.69px;
+                        bottom: -61.74px;
 
-                        @media screen and (max-width: 1023.90px) {
-                                right: 1rem;
-                                bottom: -7rem;
+                        @media screen and (max-width: 1023.9px) {
+                                right: 12.69px;
+                                bottom: -105.74px;
                         }
 
                         @media screen and (max-width: 767.9px) {
@@ -340,15 +372,35 @@ header {
 /* Style footer */
 
 footer {
-        margin-bottom: 5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
+        text-align: center;
         color: $secondary_text_color;
-
-        .social_media {
+        margin-bottom: 15px;
+        .references{
+                width: 116px;
+                height: 102.224px;
+                margin: auto;
                 display: flex;
-                gap: 2rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 221.78px;
+                margin-bottom: 110px;
+
+                @media screen and (max-width: 1023.9px) {
+                        margin-top: 320px;
+                        margin-bottom: 121.78px;
+                }
+
+                @media screen and (max-width: 767.9px) {
+                        margin-top: 391px;
+                        margin-bottom: 63.78px;
+                }
+
+        }
+        
+        .social_media {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
         }
 }
