@@ -46,7 +46,7 @@ header {
                 margin: auto;
                 display: flex;
                 justify-content: space-between;
-                padding: 56px 165px 90px;
+                padding: 56px 165px;
 
                 @media screen and (max-width: 1023.9px) {
                         padding: 32px 39px 56px;
@@ -374,7 +374,6 @@ header {
 footer {
         text-align: center;
         color: $secondary_text_color;
-        margin-bottom: 15px;
         .references{
                 width: 116px;
                 height: 102.224px;

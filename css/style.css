@@ -72,7 +72,7 @@ header nav {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 56px 165px 90px;
+  padding: 56px 165px;
 }
 @media screen and (max-width: 1023.9px) {
   header nav {
@@ -430,7 +430,6 @@ header .hero {
 footer {
   text-align: center;
   color: #24053E;
-  margin-bottom: 15px;
 }
 footer .references {
   width: 116px;
