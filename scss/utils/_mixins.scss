@@ -5,9 +5,13 @@
 
 @mixin primary_default {
     align-self: center;
-    padding: 13px 24.5px 16px 25.5px;
+    padding: 13px 31.5px 16px 32.5px;
     background-color: $emphasize_color;
     color: $secondary_text_color;
+
+    @media screen and (max-width: 1023.9px) {
+        padding: 11px 24px 12px 23px; 
+    }
 }
 
 @mixin primary_hover {

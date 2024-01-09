@@ -23,13 +23,13 @@ table {
 }
 
 a {
-  color: #FFFFFF;
+  color: #FFF;
   text-decoration: none;
 }
 
 /* Start*/
 body {
-  color: #FFFFFF;
+  color: #FFF;
   font-size: 1.125rem;
   font-family: "Manrope", sans-serif;
 }
@@ -72,16 +72,16 @@ header nav {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 56px 165px;
+  padding: 57.78px 165px 63.62px;
 }
 @media screen and (max-width: 1023.9px) {
   header nav {
-    padding: 32px 39px 56px;
+    padding: 37px 39px 60.39px;
   }
 }
 @media screen and (max-width: 767.9px) {
   header nav {
-    padding: 32px 16px 64px;
+    padding: 37px 16px 68.39px;
   }
 }
 header nav a {
@@ -109,10 +109,16 @@ header .banner {
 }
 header .banner a {
   align-self: center;
-  padding: 13px 24.5px 16px 25.5px;
+  padding: 13px 31.5px 16px 32.5px;
   background-color: #44FFA1;
   color: #24053E;
   font-weight: 700;
+  line-height: 32px;
+}
+@media screen and (max-width: 1023.9px) {
+  header .banner a {
+    padding: 11px 24px 12px 23px;
+  }
 }
 header .banner a:hover {
   color: #44FFA1;
@@ -123,12 +129,14 @@ header h1 {
   font-family: "Fraunces", sans-serif;
   font-size: 5rem;
   margin-bottom: 37px;
+  line-height: 80px;
 }
 @media screen and (max-width: 1023.9px) {
   header h1 {
     font-family: "Fraunces", sans-serif;
     font-size: 3.75rem;
     margin-bottom: 39px;
+    line-height: 60px;
   }
 }
 @media screen and (max-width: 767.9px) {
@@ -136,10 +144,13 @@ header h1 {
     font-family: "Fraunces", sans-serif;
     font-size: 2.75rem;
     margin-bottom: 40px;
+    line-height: 50px;
   }
 }
 header span {
   border-bottom: 3px #44FFA1 solid;
+  display: inline-block;
+  padding-bottom: 1px;
 }
 header .pattern-one {
   position: absolute;
@@ -178,7 +189,7 @@ header .hero {
   height: 427px;
   object-fit: contain;
   position: relative;
-  top: 50px;
+  top: 64px;
 }
 @media screen and (max-width: 1023.9px) {
   header .hero {
@@ -239,11 +250,13 @@ header .hero {
 }
 .product-benefit .features {
   width: 354px;
+  line-height: 40px;
 }
 @media screen and (max-width: 1023.9px) {
   .product-benefit .features {
     width: 573px;
     display: flex;
+    line-height: 36px;
   }
 }
 @media screen and (max-width: 767.9px) {
@@ -254,7 +267,7 @@ header .hero {
   }
 }
 .product-benefit .features span {
-  padding: 16px 24px;
+  padding: 8px 23.5px;
   font-family: "Fraunces", sans-serif;
   font-size: 1.5rem;
   border: 2px #584D62 solid;
@@ -263,7 +276,7 @@ header .hero {
 }
 @media screen and (max-width: 1023.9px) {
   .product-benefit .features span {
-    padding: 14px 22px;
+    padding: 5px 16px;
     font-family: "Fraunces", sans-serif;
     font-size: 1.25rem;
   }
@@ -289,17 +302,27 @@ header .hero {
   .product-benefit .features .feature-text {
     text-align: justify;
     padding-left: 32px;
+    padding-right: 18px;
   }
 }
 @media screen and (max-width: 767.9px) {
   .product-benefit .features .feature-text {
     text-align: center;
-    padding-left: 0;
+    padding: 0;
   }
 }
 @media screen and (max-width: 350px) {
   .product-benefit .features .feature-text {
     margin: 0 1rem;
+  }
+}
+.product-benefit .features p {
+  color: #584D62;
+  line-height: 32px;
+}
+@media screen and (max-width: 767.9px) {
+  .product-benefit .features p {
+    line-height: 28px;
   }
 }
 
@@ -374,12 +397,14 @@ header .hero {
   font-family: "Fraunces", sans-serif;
   font-size: 3.5rem;
   margin-bottom: 32px;
+  line-height: 64px;
 }
 @media screen and (max-width: 1023.9px) {
   .repeat_offer .offer h2 {
     font-family: "Fraunces", sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 24px;
+    line-height: 56px;
   }
 }
 @media screen and (max-width: 767.9px) {
@@ -391,10 +416,13 @@ header .hero {
 }
 .repeat_offer .offer p {
   margin-bottom: 32px;
+  line-height: 32px;
 }
 @media screen and (max-width: 1023.9px) {
   .repeat_offer .offer p {
     margin-bottom: 24px;
+    line-height: 28px;
+    max-width: 402px;
   }
 }
 .repeat_offer .offer .pattern-three {
@@ -415,10 +443,16 @@ header .hero {
 }
 .repeat_offer .offer a {
   align-self: center;
-  padding: 13px 24.5px 16px 25.5px;
+  padding: 13px 31.5px 16px 32.5px;
   background-color: #44FFA1;
   color: #24053E;
+  line-height: 32px;
   font-weight: 700;
+}
+@media screen and (max-width: 1023.9px) {
+  .repeat_offer .offer a {
+    padding: 11px 24px 12px 23px;
+  }
 }
 .repeat_offer .offer a:hover {
   color: #44FFA1;
@@ -429,7 +463,6 @@ header .hero {
 /* Style footer */
 footer {
   text-align: center;
-  color: #24053E;
 }
 footer .references {
   width: 116px;

@@ -46,15 +46,15 @@ header {
                 margin: auto;
                 display: flex;
                 justify-content: space-between;
-                padding: 56px 165px;
+                padding: 57.78px 165px 63.62px;
 
                 @media screen and (max-width: 1023.9px) {
-                        padding: 32px 39px 56px;
+                        padding: 37px 39px 60.39px;
                         
                 }
 
                 @media screen and (max-width: 767.9px) {
-                        padding: 32px 16px 64px;
+                        padding: 37px 16px 68.39px;
                 }
 
                 a {
@@ -84,6 +84,7 @@ header {
                 a {
                         @include primary_default;
                         font-weight: 700;
+                        line-height: 32px;
                 }
 
                 a:hover {
@@ -94,20 +95,25 @@ header {
         h1 {
                 @include heading_typography(5rem);
                 margin-bottom: 37px; 
+                line-height: 80px;
 
                 @media screen and (max-width: 1023.9px) {
                         @include heading_typography(3.75rem);
-                        margin-bottom: 39px; 
+                        margin-bottom: 39px;
+                        line-height: 60px; 
                 }
 
                 @media screen and (max-width: 767.9px) {
                         @include heading_typography(2.75rem);
                         margin-bottom: 40px; 
+                        line-height: 50px; 
                 }
         }
 
         span {
                 @include secondary_default;
+                display: inline-block;
+                padding-bottom: 1px;
         }
 
         .pattern-one {
@@ -145,7 +151,7 @@ header {
                 height: 427px; 
                 object-fit: contain;
                 position: relative;
-                top: 50px;
+                top: 64px;
 
                 @media screen and (max-width: 1023.9px) {
                         width: 479.153px;
@@ -200,9 +206,11 @@ header {
 
         .features {
                 width: 354px;
+                line-height: 40px; 
                 @media screen and (max-width: 1023.9px) {
                         width: 573px;
                         display: flex;
+                        line-height: 36px; 
                 }
 
                 @media screen and (max-width: 767.9px) {
@@ -212,14 +220,14 @@ header {
                 }
 
                 span { 
-                        padding: 16px 24px;
+                        padding: 8px 23.5px;
                         @include heading_typography(1.5rem);
                         border: 2px $tertiary_text_color solid;
                         border-radius: 50%;
                         color: $secondary_text_color;
 
                         @media screen and (max-width: 1023.9px) {
-                                padding: 14px 22px;
+                                padding: 5px 16px;
                                 @include heading_typography(1.25rem);
                         } 
                 }
@@ -244,15 +252,25 @@ header {
                         @media screen and (max-width: 1023.9px) {
                                 text-align: justify;
                                 padding-left: 32px;
+                                padding-right: 18px;
                         }  
 
                         @media screen and (max-width: 767.9px) {
                                 text-align: center;
-                                padding-left: 0;
+                                padding: 0;
                         }
 
                         @media screen and (max-width: 350px) {
                                 margin: 0 1rem;
+                        }
+                }
+
+                p {
+                        color: $tertiary_text_color;
+                        line-height: 32px;
+
+                        @media screen and (max-width: 767.9px) {
+                                line-height: 28px;
                         }
                 }
         }
@@ -323,10 +341,12 @@ header {
                 h2 {
                         @include heading_typography(3.5rem);
                         margin-bottom: 32px;
+                        line-height: 64px; 
 
                         @media screen and (max-width: 1023.9px) {
-                                @include heading_typography(3rem);
+                                @include heading_typography(2.5rem);
                                 margin-bottom: 24px;
+                                line-height: 56px;
                         }
 
                         @media screen and (max-width: 767.9px) {
@@ -337,9 +357,12 @@ header {
 
                 p {
                         margin-bottom: 32px;
+                        line-height: 32px;
 
                         @media screen and (max-width: 1023.9px) {
                                 margin-bottom: 24px;
+                                line-height: 28px;
+                                max-width: 402px;
                         }
                 }
 
@@ -360,6 +383,7 @@ header {
 
                 a {
                         @include primary_default;
+                        line-height: 32px; 
                         font-weight: 700;
                 }
 
@@ -373,7 +397,6 @@ header {
 
 footer {
         text-align: center;
-        color: $secondary_text_color;
         .references{
                 width: 116px;
                 height: 102.224px;
