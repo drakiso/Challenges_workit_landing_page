@@ -154,7 +154,7 @@ header span {
 }
 header .pattern-one {
   position: absolute;
-  top: 135.17px;
+  top: 116.64px;
   left: -138.03px;
 }
 @media screen and (max-width: 1023.9px) {
@@ -187,7 +187,6 @@ header .pattern-two {
 header .hero {
   width: 715px;
   height: 427px;
-  object-fit: contain;
   position: relative;
   top: 64px;
 }
@@ -249,14 +248,18 @@ header .hero {
   }
 }
 .product-benefit .features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 354px;
   line-height: 40px;
+  text-align: center;
 }
 @media screen and (max-width: 1023.9px) {
   .product-benefit .features {
     width: 573px;
-    display: flex;
     line-height: 36px;
+    flex-direction: row;
   }
 }
 @media screen and (max-width: 767.9px) {
@@ -267,23 +270,24 @@ header .hero {
   }
 }
 .product-benefit .features span {
-  padding: 8px 23.5px;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Fraunces", sans-serif;
   font-size: 1.5rem;
-  border: 2px #584D62 solid;
+  border: 1px #584D62 solid;
   border-radius: 50%;
   color: #24053E;
 }
 @media screen and (max-width: 1023.9px) {
   .product-benefit .features span {
-    padding: 5px 16px;
+    width: 48px;
+    height: 46px;
     font-family: "Fraunces", sans-serif;
     font-size: 1.25rem;
-  }
-}
-@media screen and (max-width: 1023.9px) {
-  .product-benefit .features .numerotation {
-    align-self: center;
   }
 }
 .product-benefit .features h2 {
@@ -302,7 +306,7 @@ header .hero {
   .product-benefit .features .feature-text {
     text-align: justify;
     padding-left: 32px;
-    padding-right: 18px;
+    padding-right: 15px;
   }
 }
 @media screen and (max-width: 767.9px) {
@@ -327,7 +331,7 @@ header .hero {
 }
 
 .repeat_offer {
-  padding-top: 110px;
+  padding-top: 119px;
 }
 @media screen and (max-width: 1023.9px) {
   .repeat_offer {
@@ -373,7 +377,7 @@ header .hero {
   background-color: #24053E;
   padding: 64px;
   position: absolute;
-  top: 173px;
+  top: 181px;
   left: 382.14px;
   line-height: 32px;
 }
@@ -472,7 +476,7 @@ footer .references {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-top: 221.78px;
+  margin-top: 230px;
   margin-bottom: 110px;
 }
 @media screen and (max-width: 1023.9px) {

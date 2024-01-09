@@ -118,7 +118,7 @@ header {
 
         .pattern-one {
                 position: absolute;
-                top: 135.17px;
+                top: 116.64px;
                 left: -138.03px;
 
                 @media screen and (max-width: 1023.9px) {
@@ -149,7 +149,6 @@ header {
         .hero {
                 width: 715px;
                 height: 427px; 
-                object-fit: contain;
                 position: relative;
                 top: 64px;
 
@@ -171,6 +170,7 @@ header {
 /* Style sections */
 
 .product-benefit {
+        
         background-color: $secondary_background_color;
         @include curved_border(100%, 20%);
 
@@ -205,12 +205,16 @@ header {
         }
 
         .features {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 width: 354px;
                 line-height: 40px; 
+                text-align: center;
                 @media screen and (max-width: 1023.9px) {
                         width: 573px;
-                        display: flex;
                         line-height: 36px; 
+                        flex-direction: row;
                 }
 
                 @media screen and (max-width: 767.9px) {
@@ -220,21 +224,21 @@ header {
                 }
 
                 span { 
-                        padding: 8px 23.5px;
+                        display: inline-block;
+                        width: 56px;
+                        height: 56px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         @include heading_typography(1.5rem);
-                        border: 2px $tertiary_text_color solid;
+                        border: 1px $tertiary_text_color solid;
                         border-radius: 50%;
                         color: $secondary_text_color;
 
                         @media screen and (max-width: 1023.9px) {
-                                padding: 5px 16px;
+                                width: 48px;
+                                height: 46px;
                                 @include heading_typography(1.25rem);
-                        } 
-                }
-
-                .numerotation {
-                        @media screen and (max-width: 1023.9px) {
-                                align-self: center;
                         } 
                 }
 
@@ -252,7 +256,7 @@ header {
                         @media screen and (max-width: 1023.9px) {
                                 text-align: justify;
                                 padding-left: 32px;
-                                padding-right: 18px;
+                                padding-right: 15px;
                         }  
 
                         @media screen and (max-width: 767.9px) {
@@ -277,7 +281,7 @@ header {
 }
 
 .repeat_offer {
-        padding-top: 110px;
+        padding-top: 119px;
 
         @media screen and (max-width: 1023.9px) {
                 padding-top: 100.27px;
@@ -320,7 +324,7 @@ header {
                 background-color: $primary_background_color;
                 padding: 64px;
                 position: absolute;
-                top: 173px;
+                top: 181px;
                 left: 382.14px;
                 line-height: 32px;
 
@@ -405,7 +409,7 @@ footer {
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-between;
-                margin-top: 221.78px;
+                margin-top: 230px;
                 margin-bottom: 110px;
 
                 @media screen and (max-width: 1023.9px) {
