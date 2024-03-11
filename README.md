@@ -60,5 +60,5 @@ A technic to hidden horizontally something from the page.
 
 - linkedin - [Israel Anzan](https://www.linkedin.com/in/drakisrael)
 - Frontend Mentor - [@drakiso](https://www.frontendmentor.io/profile/drakiso)
-- Twitter - [@DrAKIso_225](https://www.twitter.com/DrAKIso_225)
+- Twitter - [@LeChefKoulango](https://www.twitter.com/LeChefKoulango)
 
